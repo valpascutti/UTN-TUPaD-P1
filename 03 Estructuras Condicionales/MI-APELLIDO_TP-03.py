@@ -88,4 +88,18 @@ else:
 '''
 
 #ejercicio 9
+magnitud = float(input("Ingrese la magnitud del terremoto: "))
+
+if magnitud < 3:
+    print("Muy leve (imperceptible)")
+elif magnitud >= 3 and magnitud < 4:
+    print("Leve (Ligeramente perceptible)")
+elif magnitud >= 4 and magnitud < 5:
+    print("Moderado (sentido por personas, pero generalmente no causa danios)")
+elif magnitud >= 5 and magnitud < 6:
+    print("Fuerte (Puede causar danios en estructuras debiles)")
+elif magnitud >= 6 and magnitud < 7:
+    print("Muy fuerte (Puede causar danios significativos)")
+else:
+    print("Extremo (Puede causar graves danios a gran escala)")
 

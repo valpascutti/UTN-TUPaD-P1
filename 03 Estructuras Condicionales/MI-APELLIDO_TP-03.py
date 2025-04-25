@@ -1,8 +1,9 @@
 # ejercicio 1
-'''edad = int(input("Ingrese su edad:"))
+edad = int(input("Ingrese su edad:"))
 
 if edad > 18:
     print("Es mayor de edad")
+
 
 # ejercicio 2
 nota = int(input("Ingrese su nota: "))
@@ -10,6 +11,8 @@ if nota >= 6:
     print("Aprobado")
 else:
     print("Desaprobado")
+
+
 #ejercicio 3
 numero = int(input("Ingrese un numero: "))
 
@@ -17,6 +20,7 @@ if numero % 2 == 0:
     print("Ha ingresado un numero par")
 else:
     print("Por favor, ingrese un numero par")
+
 
 #ejercicio 4
 edad = int(input("Ingrese su edad: "))
@@ -30,12 +34,14 @@ elif edad >= 18 and edad <30:
 else:
     print("Adulto/a")
 
+
 #ejercicio 5
 password = str(input('Ingrese una contrasenia de entre 8 y 14 caracteres: '))
 if len(password) >= 8 and len(password) <= 14:
     print("Ha ingresado una contrasenia correcta")
 else:
     print("Por favor, ingrese una contrasenia de entre 8 y 14 caracteres")
+
 
 #ejercicio 6
 import random
@@ -68,6 +74,7 @@ if frase[-1] in "aeiou":
 else:
     print(frase)
 
+
 #Ejercicio 8
 nombre = input("Ingrese su nombre: ")
 print("***MENU OPCIONES***")
@@ -85,9 +92,9 @@ elif opc == 3:
     print(nombre.title())
 else:
     print("ERROR! ingrese una opcion valida")
-'''
 
-#ejercicio 9
+
+# Ejercicio 9
 magnitud = float(input("Ingrese la magnitud del terremoto: "))
 
 if magnitud < 3:
@@ -103,3 +110,30 @@ elif magnitud >= 6 and magnitud < 7:
 else:
     print("Extremo (Puede causar graves danios a gran escala)")
 
+
+# Ejercicio 10
+hemisferio = input("Ingrese 'N' si se encuentra en el Hemisferio Norte o 'S' si esta en el Hemisferio Sur: ")
+hemisferio = hemisferio.lower()
+
+mes = int(input("Ingrese el mes (en numeros) del anio: "))
+dia = int(input("Ingrese el dia del mes en numeros: "))
+
+
+if hemisferio == "s":
+    if (mes == 12 and dia >= 21) or (mes in (1,2)) or (mes == 3 and dia <= 20):
+        print("Verano")
+    elif (mes == 3 and dia >= 21) or (mes in (4,5)) or (mes == 6 and dia <= 20):
+        print("Otonio")
+    elif (mes == 6 and dia >= 21) or (mes in (7,8)) or (mes == 9 and dia <= 20):
+        print("Invierno")
+    elif (mes == 9 and dia >= 21) or (mes in (10, 11)) or (mes == 12 and dia <= 20):
+        print("Primavera")
+elif hemisferio == "n":
+    if (mes == 12 and dia >= 21) or (mes in (1,2)) or (mes == 3 and dia <= 20):
+        print("Invierno")
+    elif (mes == 3 and dia >= 21) or (mes in (4,5)) or (mes == 6 and dia <= 20):
+        print("Primavera")
+    elif (mes == 6 and dia >= 21) or (mes in (7,8)) or (mes == 9 and dia <= 20):
+        print("Verano")
+    elif (mes == 9 and dia >= 21) or (mes in (10, 11)) or (mes == 12 and dia <= 20):
+        print("Otonio")

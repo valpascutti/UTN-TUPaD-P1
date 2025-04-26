@@ -73,7 +73,7 @@ acu = 0
 for i in range(0, nro + 1):
     acu += i
 print(f'La suma de todos los numeros comprendidos entre 0 y {nro} es: {acu}')
-'''
+
 
 # EJERCICIO 8
 negativos = 0
@@ -92,5 +92,19 @@ for i in range(5):
     else: 
         negativos += 1
 
-print(f'Pares: {pares} Impares: {impares} Positivos: {positivos}  Negativos: {negativos}') 
+print(f"Cantidad de números pares: {pares}")
+print(f"Cantidad de números impares: {impares}")
+print(f"Cantidad de números positivos: {positivos}")
+print(f"Cantidad de números negativos: {negativos}")
 
+
+# EJERCICIO 9
+
+suma = 0
+for i in range(100):
+    numero = int(input("Ingrese un numero entero: "))
+    suma += numero
+
+media = suma / 100
+print(f'La media de los numeros ingresados es: {media}')
+'''

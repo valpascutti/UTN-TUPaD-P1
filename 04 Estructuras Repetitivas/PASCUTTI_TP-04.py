@@ -75,3 +75,22 @@ for i in range(0, nro + 1):
 print(f'La suma de todos los numeros comprendidos entre 0 y {nro} es: {acu}')
 '''
 
+# EJERCICIO 8
+negativos = 0
+positivos = 0
+pares = 0 
+impares = 0
+
+for i in range(5):
+    number = int(input("Ingrese un numero: "))
+    if number % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+    if number > 0:
+        positivos += 1
+    else: 
+        negativos += 1
+
+print(f'Pares: {pares} Impares: {impares} Positivos: {positivos}  Negativos: {negativos}') 
+

@@ -14,7 +14,7 @@ for i in range(len(numero)):
     contador += 1
 
 print(f"Tiene {contador} digitos")
-'''
+
 
 # EJERCICIO 3
 
@@ -27,4 +27,16 @@ if nro1 < nro2:
 
     print(f"La suma de los nros entre el rango es: {acumulador}")
 else:
-    print("Error! El primer numero debe ser mayor que el segundo")
+    print("Error! El primer numero debe ser mayor que el segundo")'''
+
+
+# EJERCICIO 4
+
+numero = int(input("Ingrese un numero (ingresa un 0 para detenerte): "))
+acumulador = 0
+
+while numero != 0:
+    acumulador += numero
+    numero = int(input("Ingrese otro numero: ")) 
+
+print(f"La suma de los numeros ingresados es {acumulador}")

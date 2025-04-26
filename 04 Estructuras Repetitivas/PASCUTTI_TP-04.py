@@ -56,3 +56,10 @@ while num_user != numero:
 
 print(f'Necesitaste de {contador} intentos para adivinar el numero :)')
 '''
+
+
+# EJERCICIO 6
+
+for i in range(100, -1, -1):
+    if i % 2 == 0:
+        print(i)

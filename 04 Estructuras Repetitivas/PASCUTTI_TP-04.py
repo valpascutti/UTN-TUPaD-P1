@@ -55,7 +55,7 @@ while num_user != numero:
     contador += 1
 
 print(f'Necesitaste de {contador} intentos para adivinar el numero :)')
-'''
+
 
 
 # EJERCICIO 6
@@ -63,3 +63,15 @@ print(f'Necesitaste de {contador} intentos para adivinar el numero :)')
 for i in range(100, -1, -1):
     if i % 2 == 0:
         print(i)
+
+
+# EJERCICIO 7
+
+nro = int(input("Ingrese un numero entero: "))
+acu = 0
+
+for i in range(0, nro + 1):
+    acu += i
+print(f'La suma de todos los numeros comprendidos entre 0 y {nro} es: {acu}')
+'''
+

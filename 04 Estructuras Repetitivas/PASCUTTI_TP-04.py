@@ -1,5 +1,5 @@
 # EJERCICIO 1
-'''
+
 for i in range(1, 101):
     print(i)
 
@@ -107,4 +107,14 @@ for i in range(100):
 
 media = suma / 100
 print(f'La media de los numeros ingresados es: {media}')
-'''
+
+
+# EJERCICIO 10
+numero = input("Ingrese un número: ")
+
+if numero[0] == '-':  
+    invertido = '-' + numero[:0:-1]  
+else:
+    invertido = numero[::-1]  
+
+print(f"El número invertido es: {invertido}")

@@ -27,7 +27,7 @@ if nro1 < nro2:
 
     print(f"La suma de los nros entre el rango es: {acumulador}")
 else:
-    print("Error! El primer numero debe ser mayor que el segundo")'''
+    print("Error! El primer numero debe ser mayor que el segundo")
 
 
 # EJERCICIO 4
@@ -40,3 +40,19 @@ while numero != 0:
     numero = int(input("Ingrese otro numero: ")) 
 
 print(f"La suma de los numeros ingresados es {acumulador}")
+
+
+# EJERCICIO 5
+import random
+numero = random.randint(0, 9)
+contador = 0 
+
+
+num_user = int(input("Adivine el numero entre el 0 al 9: "))
+contador += 1
+while num_user != numero:
+    num_user = int(input("Ingrese otro numero: "))
+    contador += 1
+
+print(f'Necesitaste de {contador} intentos para adivinar el numero :)')
+'''

@@ -25,7 +25,7 @@ lista_palabras.append("Hola")
 lista_palabras.append("Ok")
 lista_palabras.append("Chau")
 
-print(lista_palabras)'''
+print(lista_palabras)
 
 
 # EJERCICIO 4
@@ -35,3 +35,27 @@ animales[1] = "loro"
 animales[-1] = "oso"
 
 print(animales)
+
+# EJERCICIO 5
+'''
+    #El programa crea una lista de numeros y 
+    #utiliza el remove para eliminar de la lista 
+    #el numero mayor de la misma.
+'''
+numbers = [8, 15, 3, 22, 7]
+
+numbers.remove(max(numbers))
+print(numbers)'''
+
+
+# EJERCICIO 6
+
+lista6 = []
+
+for i in range(10, 31, 5):
+    lista6.append(i)
+print(lista6)
+primeros_nros = lista6[0:2]
+print(primeros_nros)
+
+    

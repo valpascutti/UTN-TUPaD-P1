@@ -1,5 +1,5 @@
 # EJERICIO 1
-'''
+
 lista_mult4 = []
 
 for i in range(1, 101):
@@ -85,7 +85,7 @@ compras[2].append("jugo")
 compras[1][1] = "tallarines"
 compras[0].remove("pan")
 print(compras)
-'''
+
 
 # EJERCICIO 10
 

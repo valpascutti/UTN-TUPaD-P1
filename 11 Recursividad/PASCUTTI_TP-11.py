@@ -43,6 +43,22 @@ def suma_digitos(n):
     else:
         return n % 10 + suma_digitos(n // 10)
 
+# EJERCICIO 7
+def contar_bloques(n):
+    if n == 1: 
+        return 1
+    else:
+        return n + contar_bloques(n-1)
+
+
+# EJERCICIO 8
+def contar_digito(numero, digito):
+    if numero == 0:
+        return 0
+    else:
+        ultimo = numero % 10
+        return (1 if ultimo == digito else 0) + contar_digito(numero // 10, digito)
+
 def main():
     '''numero = int(input('Ingrese un numero entero positivo: '))
     for i in range(1, numero + 1):
@@ -70,9 +86,19 @@ def main():
     if palabra_pal:
         print("Es palindromo")
     else: 
-        print("No es")'''
+        print("No es")
 
     sum_num = int(input("Numero: "))
     suma = suma_digitos(sum_num)
     print(suma)
+
+    bloques = int(input("cant bloques: "))
+    cant_bloques = contar_bloques(bloques)
+    print(cant_bloques)'''
+
+    numero1 = int(input("Numero: "))
+    digito = int(input("digito: "))
+    retu = contar_digito(numero1, digito)
+    print(retu)
+
 main()
